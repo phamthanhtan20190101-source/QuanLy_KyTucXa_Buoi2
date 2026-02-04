@@ -57,6 +57,7 @@ namespace QuanLy_KyTucXa.Forms
         {
             try
             {
+                dataGridView.AutoGenerateColumns = false;
                 // Lấy danh sách SV và sắp xếp theo tên
                 List<SinhVien> listSV = context.SinhViens.OrderBy(sv => sv.HoTen).ToList();
                 dataGridView.DataSource = listSV;
